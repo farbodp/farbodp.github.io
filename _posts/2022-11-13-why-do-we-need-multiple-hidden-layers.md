@@ -14,6 +14,7 @@ This is not the case for layer width, as seen in Fig 6.7.
 As can be seen, increasing the layer width does not have the same impact as increasing the depth.
 Based on these two figures, we can conclude that stacking several layers is a highly effective deep learning tradition.
 It improves the model's generalization capabilities and lowers overfitting.
+
 The second reason is that deep neural networks can provide more high-level features. Deep learning feature extraction operates in a hierarchical fashion. Consider object detection in CNNs as an example. The earliest convolution layers in CNNs extract low-level characteristics such as edges. The deeper layers extract more complicated and high-level features, such as objects. Multiple layers operate as filters, reducing noise from the input pictures and extracting useful information.
 
 To recap, stacking numerous layers in deep learning has the following benefits:
