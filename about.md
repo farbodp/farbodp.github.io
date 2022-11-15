@@ -4,12 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hello. I'm Farbod and this is machine learning blog. I studied electrical engineering for my bachelor's and master's degrees, but it wasn't until the end of my master's program that I realized my interests are programming and machine learning. Since then, I've been practicing these skills by studying, developing, and teaching them.
 
-### More Information
+I'll try to share my learning journey with the rest of the world here. I'd be delighted if you could correct me about my content ;).
 
-A place to include any other types of information that you'd like to include about yourself.
+## Contact me
 
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+[farbod.parvin72@gmail.com](mailto:farbod.parvin72@gmail.com)
