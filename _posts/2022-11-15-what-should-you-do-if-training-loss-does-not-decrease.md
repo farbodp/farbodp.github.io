@@ -22,18 +22,17 @@ I was upset since my paper submission date had passed.
 I attempted so many techniques that I may detail them in another post, but for now, I'll just focus on the solution.
 I had these two lines somewhere in my pre-processing code: 
 
-```python
-X_train = shuffle_along_first_axis(X_train)
-y_train = shuffle_along_first_axis(y_train)
-```
+
+    X_train = shuffle_along_first_axis(X_train)
+    y_train = shuffle_along_first_axis(y_train)
+
 where `shuffle_along_first_axis` is defined as:
 
-```python
-def shuffle_along_first_axis(arr: np.ndarray):
-    arr_len = arr.shape[0]
-    shuffled_indices = np.random.permutation(arr_len)
-    return arr[shuffled_indices]
-```
+    def shuffle_along_first_axis(arr: np.ndarray):
+        arr_len = arr.shape[0]
+        shuffled_indices = np.random.permutation(arr_len)
+        return arr[shuffled_indices]
+
 
 I guess you can see my error by looking at these two blocks of code. I was shuffling `X` and `y` arrays independently. As a result, the labels no longer correlate to the associated input. This critical (and dumb) error cost me nearly two months of my life. I discovered this mistake by overfitting the network with only a few samples. However, as I increased the number of samples to more than ten, the training loss stopped to decrease. So I discovered that something is wrong with my data. The problem was resolved when I removed these two lines of code, and then the network began to learn. I hope this advice will be useful to you and will help you to save some time.
 
