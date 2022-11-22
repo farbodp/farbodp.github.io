@@ -67,7 +67,7 @@ def traverse(root, level=0):
         for i in range(0, n):
             traverse(root.children[i], level=level+1)
 ```
-There are two things to consider here. First is the `level` argument of the function, which tracks the depth of this recursive process (or in this case, depth of the decision tree). Second is the `print` statement, which does the trick for visualization. With each depth level, I add on tab to the string (using the `'\t'*level`). You can see the result in below:
+There are two things to consider here. First is the `level` argument of the function, which tracks the depth of this recursive process (or in this case, depth of the decision tree). Second is the `print` statement, which does the trick for visualization. With each depth level, I add one tab to the string (using the `'\t'*level`). You can see the result in below:
 
 ![text_tree.png]({{ site.baseurl }}/images/text_tree.png)
 
