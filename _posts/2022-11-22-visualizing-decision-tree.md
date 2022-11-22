@@ -5,7 +5,7 @@ title: Visualizing decision tree
 
 A couple of days ago, a friend of mine asked me to do a mini-project on decision tree classification. But I shouldn't use packages such as scikit learn and I had to write it from scratch. I completed it and hand it over. Then he asked me to do bonus part of this project, which was visualizing the tree without using any packages. I had some fun doing it, so I thought maybe I can share it here ;).
 
-As you may know,to build a decision tree, we need to write it as a recursive function, so that for every node, we build a tree using its children. I used [Rohit's code](https://github.com/rohit1576/Decision-Tree) here: 
+As you may know, to build a decision tree, we need to write it as a recursive function, so that for every node, we build a tree using its children. I used [Rohit's code](https://github.com/rohit1576/Decision-Tree) here: 
 
 ```python
 class Node(object):
@@ -49,7 +49,7 @@ def buildTree(X, y, rows, columns):
     return root
 ```
 
-I didn't bring `findMaxGain` function here for simplicity, but you find the full code in his repo. So as you can see, buildTree function is used recursively.
+I didn't bring `findMaxGain` function here for simplicity, but you find the full code in his repo. So as you can see, the `buildTree` function is used recursively.
 
 I needed another function to traverse this tree and visualize the nodes in a hierarchical manner, something like in below:
 
